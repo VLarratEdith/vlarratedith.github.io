@@ -1,0 +1,415 @@
+* {
+    margin: 1px;
+    padding: 0;
+}
+html{
+   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul, li {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+body{
+    background-color: whitesmoke; 
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: darkblue;
+    color:aliceblue;
+    height: 145px;
+} 
+#Foto{
+    display: flex;
+    align-items: center;
+}
+h1{
+    position:relative;
+    display: flex;
+    align-items:self-end;
+    width: 350px;
+    height: 70px;
+    color:whitesmoke;
+ }   
+#Especialización{
+    position:relative;
+    display:flex;
+    align-items:first baseline;
+    left: 0.3em;
+    text-align:right;
+    width: 330px;
+    height: 50px;
+    color:beige;  
+}
+
+/*Date format*/
+ul.Datos{
+    position:relative;
+    display:flexbox;
+    width: 250px; 
+    height: 110px;
+    right: 5%; 
+}  
+ul.Datos li{
+    padding: 20px 0spx;
+    text-align:left center;
+    font-size: 14px;
+    line-height: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 200px;
+    height: 40px;
+    text-align: left; 
+}
+ul.Datos a:visited {
+    text-decoration: none;
+    color:whitesmoke;
+}
+ul.Datos a:hover{
+    background-color: #E38646;
+}
+ul.Datos img{
+    margin:5%;
+    width: 30px;
+    height: 30px;
+    margin-top: 0%;
+    vertical-align: middle;
+}
+
+/*Horizontal menu bar format*/
+.nav-bar {
+    background: #E38646;
+    padding: 10px;
+    display: block;
+    color:white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+.menu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    background: gray;
+    color: whitesmoke;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+.menu__link{
+    display:block;
+    padding: 0.1em;
+    color:white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 4px 16px;   
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.submenu .menu__link{
+    background: rgb(70, 66, 66);
+    color:whitesmoke;
+    padding-left: 30px;
+    font-size: 0.9em;
+}
+.menu__link:hover{
+    background:#E38646;
+}
+.submenu .menu__link:hover{
+    background: darkblue;
+}
+
+/*Responsive Web Design for horizontal menu bar*/
+@media(min-width:1024px){
+    .nav-bar {
+        display:none;  
+    }
+    .menu{
+        margin-left:0;
+        display:flex; 
+    }
+    .container-submenu {
+        position:relative;
+    }
+    .submenu {
+        position:absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        top: 30px;  
+    }
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.mostrar {
+    margin-left: 0%;   
+}
+
+#ResumenProfesional{
+    margin-top:2%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: darkblue;
+    text-align:justify;
+    background-color: transparent;
+    font-size: 120%;
+}
+h2{
+    color:darkblue;
+    margin-top: 5%;
+}
+h3{
+    position: relative;
+    color:blue;
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 15px;
+}
+#Noticias{
+    color:black;
+    background-color:turquoise;
+    color: white;
+    overflow:scroll;
+    width: 350px;
+    height: 365px;
+    margin-left: 0.50rem;
+    position: relative;
+}
+article{
+    float:left;
+    color: black;
+    overflow: hidden;
+    margin:10%;
+    text-align:justify;
+}
+h4{
+    color:black;
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+img{
+    margin: 2%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    object-fit: cover; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Noticias p{
+    margin-top: 15px;
+}
+
+/*Academic training*/
+ul.FAcademica{
+    color:black;
+    padding-left: 2rem;
+}
+ul.FAcademica li{
+    list-style-type: none;
+    background-position:0 0;
+    background-size: 16px 16px ;
+    background-repeat: no-repeat;
+    padding-left: 1.3rem;
+    height: 50px;
+    font-size:105%;
+    margin-top: 2%;
+}
+
+/*Trajectory Table*/
+th{
+    background: darkblue;
+    color:whitesmoke;
+    text-align: center;
+    height: 40px;
+}
+td{
+    height: 30px;
+}
+table{
+    margin: 5px;
+    padding: 1px;
+    border: darkblue 2px solid;
+    text-align: left;
+    border-collapse: collapse;
+    width: 98%;
+    height: 300px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+tbody{
+    background:rgb(223, 220, 220);
+    border:darkblue 1px solid;
+}
+
+/*additional training*/
+section.FComplementaria{
+    text-align: justify;
+}
+ul.FComplementaria{
+    color:black;
+    padding-left: 1rem;
+    height: 200px;
+    width: 95%;
+}
+ul.FComplementaria li{
+    list-style-type: none;
+    background-position:0 0;
+    background-size: 16px 16px ;
+    background-repeat: no-repeat;
+    padding-left: 1.3rem;
+    height: 60px;
+    font-size:105%;
+    margin-top: 2%;
+}
+
+/*Skills*/
+section.Otros{
+    position: relative;
+    padding-left: 1rem;
+    position: relative;
+}
+ul.Aptitudes{
+    text-justify: distribute;
+    background-color:skyblue;
+    color: black;
+    width: 500px;
+    height: 150px;
+    padding: 0.5rem;  
+    font-size: 105%;   
+}
+ul.Aptitudes li{
+    list-style-type:disc;
+    list-style-position:inside;
+}
+ul.Competencias{
+    text-justify: distribute;
+    background-color:skyblue;
+    color: black;
+    width: 500px;
+    height: 150px;
+    padding: 0.5rem;
+    font-size: 105%;    
+}
+ul.Competencias li{
+    list-style-type:disc;
+    list-style-position:inside;
+}
+ul.Software{
+    text-justify: distribute;
+    background-color: bisque;
+    color: black;
+    width: 500px;
+    height: 90px;
+    padding: 0.5rem; 
+    font-size: 105%; 
+}
+ul.Software li{
+    list-style-type:disc;
+    list-style-position:inside;
+}
+ul.Idiomas{
+    text-justify: distribute;
+    background-color:bisque;
+    color: black;
+    width: 500px;
+    height: 90px;
+    padding: 0.5rem;
+    font-size: 105%; 
+}
+ul.Idiomas li{
+    list-style-type:disc;
+    list-style-position:inside;
+
+}
+
+/*Contact section*/
+section.Contacto{
+    font-size: 130%;
+    line-height: 160%;
+    width: 100%;
+    height: 100%;
+}
+form.FContacto{
+    background-color: rgb(48, 44, 44);
+    border: whitesmoke solid 30px;
+    padding: 3rem;
+    color:red; 
+    height: auto;
+    width: 1000px;
+    box-sizing: border-box;
+}
+#Envio{
+    color: whitesmoke;
+    margin-top: 30px;
+}
+input, select, textarea{
+  font-family: inherit;
+  font-size: 100%; 
+  background-color: whitesmoke;
+  color: black;
+  width: 850px;
+  height: 60px;
+}
+.Elegir label{
+    color:red;
+    left: 4%;
+}
+.Elegir input{
+    width: 40px;
+    height: 40px;
+}
+.Enviar input{
+    background-color: red;
+    color:whitesmoke;
+    width: 300px;
+    margin-top: 5%;
+    margin-left:30%;
+}
+
+/*Footer*/
+.LogoLegal{
+    color: rgb(71, 69, 69);
+    font-size:16px;
+    text-align: center; 
+    margin-top: 1px;
+} 
+.LogoLegal img{
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.LogoLegal p{
+    height: 20px;
+    margin-bottom: 2%;
+}
+.LogoLegal div{  
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+.LogoLegal button{
+  color: darkblue;
+  width: 100px;
+  height: 40px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px;
+}
